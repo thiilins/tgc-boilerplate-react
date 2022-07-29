@@ -1,34 +1,37 @@
-const lightTheme = {
+const DefaultTheme = {
   title: 'light',
   colors: {
-    background: '#ffff',
-    header: '#f7e13b',
-    primaryText: '#1f1f1f',
-    secondaryText: '#666666',
-    cardColor: '#f3f3f3',
-    primary: '#F5DB13',
-    secondary: '#F28F16'
+    blue: '#4169e1',
+    blueViolet: '#8a2be2',
+    goldenRod: '#daa520',
+    green: '#72b626',
+    magenta: '#ee6192',
+    orange: '#fa5b0f',
+    purple: '#6957af',
+    red: '#f72b1c',
+    yellow: '#ffb400',
+    yellowGreen: '#9acd32'
   },
   fonts: {
     poppins: {
       family: "'Poppins', sans-serif"
     },
     weight: {
-      extralight: 200,
+      extraLight: 200,
       regular: 400,
       medium: 500,
-      semibold: 600,
+      semiBold: 600,
       bold: 700,
       black: 900
     },
     size: {
-      xxsmall: '1.2rem',
-      xsmall: '1.4rem',
+      xxSmall: '1.2rem',
+      xSmall: '1.4rem',
       small: '1.6rem',
       medium: '1.8rem',
       large: '2.0rem',
-      xlarge: '2.4rem',
-      xxlarge: '4.8rem'
+      xLarge: '2.4rem',
+      xxLarge: '4.8rem'
     },
     colors: {
       primaryText: '#1f1f1f',
@@ -42,13 +45,13 @@ const lightTheme = {
     full: '10rem'
   },
   spacings: {
-    xsmall: '0.5rem',
+    xSmall: '0.5rem',
     small: '1rem',
     base: '2rem',
     medium: '3rem',
     large: '4rem',
-    xlarge: '5rem'
+    xLarge: '5rem'
   }
 }
 
-export default lightTheme
+export default DefaultTheme
