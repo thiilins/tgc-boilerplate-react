@@ -5,17 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "lint": "eslint src --max-warnings=0",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "push:patch": "npm version patch && git push",
+    "push:minor": "npm version minor && git push",
+    "push:major": "npm version major && git push"
   },
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix"
     ]
   },
-  "eslintConfig": {
-   
   "dependencies": {
     "@types/styled-components": "^5.1.25",
     "react": "^18.2.0",
