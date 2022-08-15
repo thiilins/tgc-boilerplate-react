@@ -8,6 +8,7 @@
     "dev": "vite",
     "start": "vite",
     "lint": "eslint src --max-warnings=0",
+    "generate": "yarn plop --plopfile generators/plopfile.cjs",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "push:patch": "npm version patch && git push",
@@ -55,6 +56,8 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.6.4",
+    "plop": "^3.1.1",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
