@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.2",
   "type": "module",
-  "licence": "MIT",
+  "license": "ISC",
   "scripts": {
     "dev": "vite",
     "start": "vite",
@@ -12,7 +12,9 @@
     "preview": "vite preview",
     "push:patch": "npm version patch && git push",
     "push:minor": "npm version minor && git push",
-    "push:major": "npm version major && git push"
+    "push:major": "npm version major && git push",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "src/**/*": [
@@ -27,11 +29,20 @@
     "vite-tsconfig-paths": "^3.5.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-vite": "^0.2.2",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
     "@vitejs/plugin-react": "^2.0.0",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",

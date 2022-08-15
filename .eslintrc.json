@@ -6,7 +6,8 @@
   "settings": {
     "react": {
       "version": "detect"
-    },
+    }
+  },
     "extends": [
       "standard",
       "eslint:recommended",
@@ -56,5 +57,5 @@
         { "devDependencies": ["**/*.spec.js"] }
       ]
     }
-  }
+
 }
