@@ -1,5 +1,5 @@
 import 'styled-components'
-import defaultTheme from './themes/default'
+import defaultTheme from '../../app/styles/themes/default'
 
 type Theme = typeof defaultTheme
 declare module 'styled-components' {
