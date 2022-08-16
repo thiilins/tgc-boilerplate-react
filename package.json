@@ -1,9 +1,14 @@
 {
-  "name": "portfolio",
+  "name": "boilerplate-react-ts",
   "private": false,
   "version": "0.0.5",
   "type": "module",
-  "license": "ISC",
+  "license": "MIT",
+  "author": {
+    "name": "Thiago Lins",
+    "email": "falecom@thiagolins.dev.br",
+    "url": "https://www.thiagolins.dev.br"
+  },
   "scripts": {
     "dev": "vite",
     "start": "vite",
