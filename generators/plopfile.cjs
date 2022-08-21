@@ -44,12 +44,12 @@ module.exports = function (plop) {
     actions: [
       {
         type: 'add',
-        path: '../src/pages/{{pascalCase pageName}}/index.tsx',
+        path: '../src/pages/{{pascalCase name}}/index.tsx',
         templateFile: 'templates/pages/index.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/pages/{{pascalCase pageName}}Page/styles.ts',
+        path: '../src/pages/{{pascalCase name}}/styles.ts',
         templateFile: 'templates/pages/styles.ts.hbs'
       }
     ]
@@ -59,34 +59,34 @@ module.exports = function (plop) {
     prompts: [
       {
         type: 'input',
-        name: 'featureName',
+        name: 'name',
         message: 'What is your feature name?'
       }
     ],
     actions: [
       {
         type: 'add',
-        path: '../src/features/{{pascalCase featureName}}/components/__nullfile',
+        path: '../src/features/{{pascalCase name}}/components/__nullfile',
         templateFile: './templates/features/__nullfile.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase featureName}}/constants/__nullfile',
+        path: '../src/features/{{pascalCase name}}/constants/__nullfile',
         templateFile: './templates/features/__nullfile.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase featureName}}/contexts/__nullfile',
+        path: '../src/features/{{pascalCase name}}/contexts/__nullfile',
         templateFile: './templates/features/__nullfile.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase featureName}}/types/__nullfile',
+        path: '../src/features/{{pascalCase name}}/types/__nullfile',
         templateFile: './templates/features/__nullfile.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase featureName}}/utils/__nullfile',
+        path: '../src/features/{{pascalCase name}}/utils/__nullfile',
         templateFile: './templates/features/__nullfile.hbs'
       }
     ]
