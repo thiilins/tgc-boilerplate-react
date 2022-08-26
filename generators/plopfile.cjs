@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = function (plop) {
   plop.setWelcomeMessage('Select Generators')
   plop.setGenerator('component', {

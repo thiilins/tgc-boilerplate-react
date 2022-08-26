@@ -1,4 +1,4 @@
-const DefaultTheme = {
+const defaultTheme = {
   title: 'light',
   colors: {
     blue: '#4169e1',
@@ -53,5 +53,4 @@ const DefaultTheme = {
     xLarge: '5rem'
   }
 }
-
-export default DefaultTheme
+export default defaultTheme

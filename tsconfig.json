@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "src",
+    "rootDir": "./src",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
@@ -15,8 +16,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["vite/client"]
   },
-  "include": ["src"],
+  "include": ["src/**/*"],
+  "extends": "./tsconfig.paths.json",
+  "files": ["src/app/styles/styled.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-
-import AppRoutes from './routes/app.routes'
+import { AuthProvider } from 'shared/contexts/AuthContext'
+import Routes from './routes'
 import GlobalStyles from './styles/global'
-import defaultTheme from './styles/themes/default'
+import defaultTheme from './styles/themes'
 import './App.css'
 
 function App() {
@@ -11,7 +11,9 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <React.StrictMode>
         <GlobalStyles />
-        <AppRoutes />
+        <AuthProvider>
+          <Routes />
+        </AuthProvider>
       </React.StrictMode>
     </ThemeProvider>
   )
