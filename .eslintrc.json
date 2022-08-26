@@ -6,6 +6,15 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "./"
+      }
     }
   },
   "extends": [
@@ -23,7 +32,13 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "react-hooks"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "import/typescript",
+    "import/recommended"
+  ],
   "rules": {
     "react/no-unescaped-entities": "off",
     "react-hooks/rules-of-hooks": "error",

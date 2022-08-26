@@ -1,4 +1,4 @@
-import reactLogo from 'assets/react.svg'
+import reactLogo from '@assets/react.svg'
 import React, { useState } from 'react'
 
 const Home = () => {
