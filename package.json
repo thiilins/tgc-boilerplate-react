@@ -1,7 +1,7 @@
 {
   "name": "boilerplate-react-ts",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "license": "MIT",
   "author": {
@@ -23,7 +23,7 @@
     "build-storybook": "build-storybook"
   },
   "lint-staged": {
-     "src/**/*": [
+    "src/**/*": [
       "yarn lint --fix"
     ]
   },
@@ -41,9 +41,8 @@
     "file-saver": "^2.0.5",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
-    "xlsx": "^0.18.5",    
+    "xlsx": "^0.18.5",
     "uuid": "^8.3.2"
-
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
