@@ -3,15 +3,12 @@
     "browser": true,
     "es2021": true
   },
-
   "settings": {
     "react": {
       "version": "detect"
     }
   },
-
   "extends": [
-    "standard",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -21,63 +18,20 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true,
-      "tsx": true
+      "jsx": true
     },
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "overrides": [
-    {
-      // or whatever matches stories specified in .storybook/main.js
-      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
-      "rules": {
-        // example of overriding a rule
-        "storybook/hierarchy-separator": "error",
-        // example of disabling a rule
-        "storybook/default-exports": "off"
-      }
-    }
-  ],
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "prettier",
-    "eslint-plugin-import-helpers"
-  ],
+  "plugins": ["react", "@typescript-eslint", "react-hooks"],
   "rules": {
-    "prettier/prettier": "error",
-    "no-shadow": "off",
-    "no-console": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "": "never",
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ],
+    "react/no-unescaped-entities": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "prefer-promise-reject-errors": "off",
-    "import-helpers/order-imports": [
-      "warn",
-      {
-        "newlinesBetween": "always",
-        "groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
-      }
-    ],
-    "react/no-unescaped-entities": 0,
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true,
-        "optionalDependencies": false,
-        "peerDependencies": false
-      }
-    ]
+    "multiline-ternary": "off",
+    "@typescript-eslint/no-non-null-assertion": "off"
   }
 }

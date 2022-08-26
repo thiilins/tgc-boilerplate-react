@@ -23,17 +23,27 @@
     "build-storybook": "build-storybook"
   },
   "lint-staged": {
-    "src/**/*": [
+     "src/**/*": [
       "yarn lint --fix"
     ]
   },
   "dependencies": {
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.10.1",
+    "@mui/styled-engine-sc": "^5.10.1",
     "@types/styled-components": "^5.1.25",
+    "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "styled-components": "^5.3.5",
-    "vite-tsconfig-paths": "^3.5.0"
+    "vite-tsconfig-paths": "^3.5.0",
+    "file-saver": "^2.0.5",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "xlsx": "^0.18.5",    
+    "uuid": "^8.3.2"
+
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
@@ -47,22 +57,17 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@types/react-router-dom": "^5.3.3",
-    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.31.0",
     "@vitejs/plugin-react": "^2.0.0",
     "babel-loader": "^8.2.5",
-    "eslint": "^8.0.1",
+    "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-import-resolver-typescript": "^3.3.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-import-helpers": "^1.2.1",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-config-standard-with-typescript": "^22.0.0",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.4",
     "plop": "^3.1.1",
     "prettier": "^2.7.1",
