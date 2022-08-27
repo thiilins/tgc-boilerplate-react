@@ -5,7 +5,7 @@ import Routes from '@app/routes'
 import GlobalStyles from '@styles/global'
 import defaultTheme from '@styles/themes'
 import './App.css'
-
+import '@app/i18n'
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>

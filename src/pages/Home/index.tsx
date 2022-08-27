@@ -1,7 +1,9 @@
 import reactLogo from '@assets/react.svg'
 import React, { useState } from 'react'
+import { useTranslation, Trans } from 'react-i18next'
 
 const Home = () => {
+  const { t } = useTranslation()
   const [count, setCount] = useState(0)
   return (
     <div className="App">
@@ -18,13 +20,9 @@ const Home = () => {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <p dangerouslySetInnerHTML={{ __html: t('home.edit_code') }}></p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className="read-the-docs">{t('home.read_docs')}</p>
     </div>
   )
 }
