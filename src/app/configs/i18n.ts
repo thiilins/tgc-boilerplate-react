@@ -19,10 +19,6 @@ i18n
       escapeValue: false // not needed for react as it escapes by default
     }
   })
-const t = (value: string) => {
-  const { t } = useTranslation()
-  return t(value)
-}
 
-export { t, useTranslation }
+export { useTranslation }
 export default i18n

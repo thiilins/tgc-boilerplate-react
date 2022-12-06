@@ -1,7 +1,7 @@
 import validateFileExtension from './validateFileExtension'
 import validateImageSize from './validateImageSize'
 
-interface ImageUploaderProps {
+interface IImageUploaderProps {
   file: File
   acceptedExtensions: Array<string>
   formatErrorMessage: string
@@ -19,7 +19,7 @@ const imageUploadValidation = async ({
   maxHeight,
   imgPreview,
   validateSize
-}: ImageUploaderProps) => {
+}: IImageUploaderProps) => {
   try {
     if (
       !validateFileExtension(file.name.toLocaleLowerCase(), acceptedExtensions)

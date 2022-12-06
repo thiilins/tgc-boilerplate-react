@@ -22,7 +22,7 @@ function usePersistedState<T>(
 
   useEffect(() => {
     localStorage.setItem(keyValue, isString ? state : JSON.stringify(state))
-  }, [key, state, isString])
+  }, [key, state, isString, keyValue])
 
   return [state, setState]
 }

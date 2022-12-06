@@ -1,4 +1,4 @@
-export default  (
+export default (
   value: string | number,
   locale = 'pt-BR',
   options?: Intl.DateTimeFormatOptions
@@ -7,4 +7,3 @@ export default  (
   const newDate = new Date(`${value.toString().slice(0, 10)} 00:00:00`)
   return config.format(newDate)
 }
-

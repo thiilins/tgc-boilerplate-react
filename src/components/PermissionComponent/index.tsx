@@ -21,7 +21,7 @@ const PermissionComponent: React.FC<IPermissionComponentProps> = ({
     }
 
     loadRoles()
-  }, [user.role])
+  }, [user.role, roles])
 
   return <>{hasPermissions && children}</>
 }

@@ -7,4 +7,3 @@ export default (
   const newDate = new Date(String(value))
   return config.format(newDate)
 }
-

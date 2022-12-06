@@ -3,12 +3,12 @@ import React from 'react'
 import { Button } from './Button'
 import './header.css'
 
-type User = {
+type IUser = {
   name: string
 }
 
-interface HeaderProps {
-  user?: User
+interface IHeaderProps {
+  user?: IUser
   onLogin: () => void
   onLogout: () => void
   onCreateAccount: () => void
@@ -19,7 +19,7 @@ export const Header = ({
   onLogin,
   onLogout,
   onCreateAccount
-}: HeaderProps) => (
+}: IHeaderProps) => (
   <header>
     <div className="wrapper">
       <div>

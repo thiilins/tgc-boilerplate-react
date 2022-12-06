@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import 'styled-components'
 import { defaultTheme } from './themes/defaults'
 type Theme = typeof defaultTheme

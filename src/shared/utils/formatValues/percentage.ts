@@ -6,4 +6,3 @@ export default (value: string | number) => {
   })
   return config.format(Number(value) / 100)
 }
-
