@@ -1,11 +1,5 @@
-const defaultTheme = {
+export const defaultTheme = {
   colors: {
-    secondary: '#80C340',
-    titleText: '#005356',
-    titleTextDark: '#004346',
-    contentText: '#A3A6B4',
-    contentTextDark: '#495057',
-    background: '#EFF6F5',
     red: '#f44336',
     redLight: '#f6685e',
     redDark: '#8a1c1c',
@@ -63,30 +57,6 @@ const defaultTheme = {
     white: '#ffffff',
     black: '#0e0e0e'
   },
-  fonts: {
-    family: "'Roboto', sans-serif",
-    weight: {
-      extraLight: 200,
-      regular: 400,
-      medium: 500,
-      semiBold: 600,
-      bold: 700,
-      black: 900
-    },
-    size: {
-      xxSmall: '1.2rem',
-      xSmall: '1.4rem',
-      small: '1.6rem',
-      medium: '1.8rem',
-      large: '2.0rem',
-      xLarge: '2.4rem',
-      xxLarge: '4.8rem'
-    },
-    colors: {
-      primaryText: '#1f1f1f',
-      secondaryText: '#212121'
-    }
-  },
   borders: {
     small: '0.4rem',
     medium: '.8rem',
@@ -100,6 +70,25 @@ const defaultTheme = {
     medium: '3rem',
     large: '4rem',
     xLarge: '5rem'
+  },
+  fonts: {
+    family: "'Roboto', sans-serif",
+    weight: {
+      extraLight: 100,
+      light: 300,
+      regular: 400,
+      medium: 500,
+      bold: 700,
+      black: 900
+    },
+    size: {
+      xxSmall: '1.2rem',
+      xSmall: '1.4rem',
+      small: '1.6rem',
+      medium: '1.8rem',
+      large: '2.0rem',
+      xLarge: '2.4rem',
+      xxLarge: '4.8rem'
+    }
   }
 }
-export default defaultTheme

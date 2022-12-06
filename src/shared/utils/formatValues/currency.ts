@@ -1,4 +1,4 @@
-const formatCurrency = (value: string | number) => {
+export default (value: string | number) => {
   const config = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL',
@@ -7,4 +7,4 @@ const formatCurrency = (value: string | number) => {
   })
   return config.format(Number(value))
 }
-export default formatCurrency
+

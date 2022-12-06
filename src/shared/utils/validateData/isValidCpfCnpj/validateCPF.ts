@@ -1,5 +1,5 @@
-const isValidCpf = (cpf: string) => {
-  cpf = cpf.replace(/[^\d]+/g, '')
+export default (value: string) => {
+  value = value.replace(/[^\d]+/g, '')
 
   const invalidCPFData = [
     '00000000000',
@@ -14,21 +14,20 @@ const isValidCpf = (cpf: string) => {
     '99999999999'
   ]
   // Elimina CPFs invalidos conhecidos
-  if (invalidCPFData.includes(cpf) || cpf === '' || cpf.length !== 11) {
+  if (invalidCPFData.includes(value) || value === '' || value.length !== 11) {
     return false
   }
   // Valida 1o digito
   let add = 0
-  for (let i = 0; i < 9; i++) add += parseInt(cpf.charAt(i)) * (10 - i)
+  for (let i = 0; i < 9; i++) add += parseInt(value.charAt(i)) * (10 - i)
   let rev = 11 - (add % 11)
   if (rev === 10 || rev === 11) rev = 0
-  if (rev !== parseInt(cpf.charAt(9))) return false
+  if (rev !== parseInt(value.charAt(9))) return false
   // Valida 2o digito
   add = 0
-  for (let i = 0; i < 10; i++) add += parseInt(cpf.charAt(i)) * (11 - i)
+  for (let i = 0; i < 10; i++) add += parseInt(value.charAt(i)) * (11 - i)
   rev = 11 - (add % 11)
   if (rev === 10 || rev === 11) rev = 0
-  if (rev !== parseInt(cpf.charAt(10))) return false
+  if (rev !== parseInt(value.charAt(10))) return false
   return true
 }
-export default isValidCpf

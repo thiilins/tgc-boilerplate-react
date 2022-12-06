@@ -1,5 +1,5 @@
 const useLocalStorage = () => {
-  const prefix = '@CB'
+  const prefix = import.meta.env.VITE_STORAGE_PREFIX
   const { localStorage } = window
 
   const setItem = (key: string, value: string) => {

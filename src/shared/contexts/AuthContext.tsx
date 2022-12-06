@@ -1,19 +1,10 @@
 import React, { createContext, useCallback, useContext, useState } from 'react'
 import api from '@services/api'
+import { IUser, IUserLoginData } from '@features/Auth/types'
 interface IAuthProviderProps {
   children: React.ReactNode
 }
-export interface IUserLoginData {
-  email: string
-  password: string
-}
-interface IUser {
-  id: string
-  name: string
-  email: string
-  perfil_type: string
-  photo?: string
-}
+
 interface IAuthState {
   token: string
   user: IUser
@@ -30,11 +21,11 @@ interface IAuthContextState {
 }
 
 const AuthContext = createContext<IAuthContextState>({} as IAuthContextState)
-
+const prefix = import.meta.env.VITE_STORAGE_PREFIX
 const AuthProvider: React.FC<IAuthProviderProps> = ({ children }) => {
   const [data, setData] = useState<IAuthState>(() => {
-    const token = localStorage.getItem('@CB:Token')
-    const user = localStorage.getItem('@CB:User')
+    const token = localStorage.getItem(`@${prefix}:Token`)
+    const user = localStorage.getItem(`@${prefix}:User`)
     if (token && user) {
       api.defaults.headers.common.Authorization = `Bearer ${token}`
       return { token, user: JSON.parse(user) }

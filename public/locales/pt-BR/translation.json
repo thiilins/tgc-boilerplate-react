@@ -2,5 +2,8 @@
   "home": {
     "read_docs": "Clique nos logotipos Vite e React para saber mais",
     "edit_code": "Edite <code>src/App.tsx</code> e salve para testar"
+  },
+  "error": {
+    "generic_error": "Ocorreu um erro ao processar sua solicitação"
   }
 }

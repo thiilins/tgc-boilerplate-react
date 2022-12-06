@@ -1,5 +1,5 @@
-const isValidCnpj = (cnpj: string) => {
-  cnpj = cnpj.replace(/[^\d]+/g, '')
+export default (value: string) => {
+  value = value.replace(/[^\d]+/g, '')
 
   const invalidCNPJData = [
     '00000000000000',
@@ -14,14 +14,14 @@ const isValidCnpj = (cnpj: string) => {
     '99999999999999'
   ]
   // Elimina CNPJs inválidos conhecidos
-  if (invalidCNPJData.includes(cnpj) || cnpj.length !== 14 || cnpj === '') {
+  if (invalidCNPJData.includes(value) || value.length !== 14 || value === '') {
     return false
   }
 
   // Valida DVs
-  let tamanho = cnpj.length - 2
-  let numeros = cnpj.substring(0, tamanho)
-  const digitos = cnpj.substring(tamanho)
+  let tamanho = value.length - 2
+  let numeros = value.substring(0, tamanho)
+  const digitos = value.substring(tamanho)
   let soma = 0
   let pos = tamanho - 7
   for (let i = tamanho; i >= 1; i--) {
@@ -32,7 +32,7 @@ const isValidCnpj = (cnpj: string) => {
   if (resultado !== +digitos.charAt(0)) return false
 
   tamanho = tamanho + 1
-  numeros = cnpj.substring(0, tamanho)
+  numeros = value.substring(0, tamanho)
   soma = 0
   pos = tamanho - 7
   for (let i = tamanho; i >= 1; i--) {
@@ -44,4 +44,3 @@ const isValidCnpj = (cnpj: string) => {
 
   return true
 }
-export default isValidCnpj
