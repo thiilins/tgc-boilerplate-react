@@ -7,9 +7,7 @@ import { light } from '@styles/themes/light'
 import { dark } from '@styles/themes/dark'
 import usePersistedState from '@hooks/usePersistedState'
 import ToastContainer from '@components/ToastContainer'
-import './App.css'
-import '@app/i18n'
-
+import '@app/configs/i18n'
 function App() {
   return (
     <ThemeProvider>

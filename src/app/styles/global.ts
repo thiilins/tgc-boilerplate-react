@@ -31,7 +31,6 @@ ${({ theme }) => css`
     }
   }
   html {
-    font-size: 62.5%;
     font-family: ${theme.fonts.family};
   }
   body {

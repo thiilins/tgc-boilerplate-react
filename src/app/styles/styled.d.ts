@@ -10,6 +10,10 @@ declare module 'styled-components' {
       secondary: string
       primaryText: string
       secondaryText: string
+      primaryNegative: string
+      secondaryNegative: string
+      primaryTextNegative: string
+      secondaryTextNegative: string
       red: string
       redLight: string
       redDark: string

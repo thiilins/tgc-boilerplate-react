@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const Container = styled.label`
   ${({ theme }) => css`
@@ -212,4 +212,4 @@ export const Container = styled.label`
       transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
     }
   `}
-`;
+`

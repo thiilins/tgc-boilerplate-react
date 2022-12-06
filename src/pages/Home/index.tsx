@@ -1,12 +1,14 @@
 import reactLogo from '@assets/react.svg'
 import React, { useState } from 'react'
-import { useTranslation } from 'react-i18next'
-
+import useTranslation from '@hooks/useTranslation'
+import ToggleTheme from '@/app/components/Layouts/ToggleTheme'
+import { Container } from './styles'
 const Home = () => {
   const { t } = useTranslation()
   const [count, setCount] = useState(0)
   return (
-    <div className="App">
+    <Container>
+      <ToggleTheme />
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -23,7 +25,7 @@ const Home = () => {
         <p dangerouslySetInnerHTML={{ __html: t('home.edit_code') }}></p>
       </div>
       <p className="read-the-docs">{t('home.read_docs')}</p>
-    </div>
+    </Container>
   )
 }
 

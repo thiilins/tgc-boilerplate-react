@@ -8,6 +8,7 @@ import { ThemeProvider as DefaultTheme } from 'styled-components'
 interface IThemeContext {
   toggleTheme(): void
   title: string
+  theme: ITheme
 }
 
 type IThemeState = 'light' | 'dark'
@@ -29,7 +30,8 @@ const ThemeProvider: React.FC<IThemeProvider> = ({ children }) => {
     <ThemeContext.Provider
       value={{
         toggleTheme,
-        title: theme.title
+        title: theme.title,
+        theme
       }}
     >
       <DefaultTheme theme={theme}>{children}</DefaultTheme>

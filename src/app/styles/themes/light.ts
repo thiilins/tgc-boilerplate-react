@@ -9,6 +9,10 @@ export const light: DefaultTheme = {
     primary: '#00181d',
     secondary: '#002a2e',
     primaryText: '#fdfdfd',
-    secondaryText: '#aecfd2'
+    secondaryText: '#aecfd2',
+    primaryNegative: '#DCDCDC',
+    secondaryNegative: '#FFFFFF',
+    primaryTextNegative: '#000',
+    secondaryTextNegative: '#333333'
   }
 }
