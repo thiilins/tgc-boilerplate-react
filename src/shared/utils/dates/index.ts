@@ -1,5 +1,4 @@
-import compareDate from './CompareDate'
-import countDaysInterval from './CountDaysInterval'
-import formatDate from './FormatDate'
-import getToday from './GetToday'
-export { compareDate, countDaysInterval, formatDate, getToday as today }
+export { default as checkIsBetweenTwoDates } from './checkIsBetweenTwoDates'
+export { default as compareDate } from './CompareDate'
+export { default as countDaysInterval } from './CountDaysInterval'
+export { default as today } from './today'

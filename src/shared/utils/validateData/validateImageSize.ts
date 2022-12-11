@@ -1,14 +1,14 @@
-interface ValidateImageSizeProps {
+interface IValidateImageSizeProps {
   imgUrl: string
   maxWidth: number
   maxHeight: number
 }
 
-const validateImageSize = async ({
+export default async ({
   imgUrl,
   maxWidth,
   maxHeight
-}: ValidateImageSizeProps) => {
+}: IValidateImageSizeProps) => {
   const img = document.createElement('img')
 
   const promise = new Promise((resolve, reject) => {
@@ -31,5 +31,3 @@ const validateImageSize = async ({
 
   return await promise
 }
-
-export default validateImageSize

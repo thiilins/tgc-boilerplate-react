@@ -1,16 +1,19 @@
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from '@contexts/ThemeContext'
 import { AuthProvider } from '@contexts/AuthContext'
 import Routes from '@app/routes'
 import GlobalStyles from '@styles/global'
-import defaultTheme from '@styles/themes'
-import './App.css'
-import '@app/i18n'
+import { light } from '@styles/themes/light'
+import { dark } from '@styles/themes/dark'
+import usePersistedState from '@hooks/usePersistedState'
+import ToastContainer from '@components/ToastContainer'
+import '@app/configs/i18n'
 function App() {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider>
       <React.StrictMode>
         <GlobalStyles />
+        <ToastContainer />
         <AuthProvider>
           <Routes />
         </AuthProvider>

@@ -1,11 +1,10 @@
 import isValidCnpj from './validateCNPJ'
 import isValidCpf from './validateCPF'
 
-const validateCNPJOrCPF = (data: string) => {
-  data = data.replace(/[^\d]+/g, '')
-  if (data.length === 14) return isValidCnpj(data)
-  if (data.length === 11) return isValidCpf(data)
+export default (value: string) => {
+  value = value.replace(/[^\d]+/g, '')
+  if (value.length === 14) return isValidCnpj(value)
+  if (value.length === 11) return isValidCpf(value)
   return false
 }
 export { isValidCnpj, isValidCpf }
-export default validateCNPJOrCPF

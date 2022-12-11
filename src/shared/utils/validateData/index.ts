@@ -1,19 +1,12 @@
-import isValidCpfCnpj, { isValidCnpj, isValidCpf } from './isValidCpfCnpj/index'
-import validateDuplicateData from './validateDuplicateData'
-import validateEmail from './validateEmail'
-import validateFileExtension from './validateFileExtension'
-import validateImageSize from './validateImageSize'
-import validateOfAge from './validateOfAge'
-import validateURL from './validateUrl'
-
 export {
-  validateDuplicateData,
-  validateEmail,
-  validateFileExtension,
-  validateImageSize,
-  validateURL,
-  validateOfAge,
-  isValidCpfCnpj,
-  isValidCpf,
-  isValidCnpj
-}
+  default as isValidCpfCnpj,
+  isValidCnpj,
+  isValidCpf
+} from './isValidCpfCnpj/index'
+export { default as validateDuplicateData } from './validateDuplicateData'
+export { default as validateEmail } from './validateEmail'
+export { default as validateFileExtension } from './validateFileExtension'
+export { default as validateImageSize } from './validateImageSize'
+export { default as imageUploadValidation } from './imageUploadValidation'
+export { default as validateOfAge } from './validateOfAge'
+export { default as validateURL } from './validateUrl'
