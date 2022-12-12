@@ -49,7 +49,6 @@
     "styled-components": "^5.3.5",
     "uuid": "^8.3.2",
     "vanilla-masker": "^1.2.0",
-    "vite-tsconfig-paths": "^3.5.0",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
@@ -68,7 +67,7 @@
     "@types/vanilla-masker": "^1.2.1",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
     "@typescript-eslint/parser": "^5.35.1",
-    "@vitejs/plugin-react": "^2.0.0",
+    "@vitejs/plugin-react": "^3.0.0",
     "babel-loader": "^8.2.5",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
@@ -84,6 +83,8 @@
     "tsconfig-paths": "^4.1.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
-    "vite-plugin-i18n-resources": "^1.0.3"
+    "vite-plugin-i18n-resources": "^1.0.3",
+    "vite-plugin-svgr": "^2.4.0",
+    "vite-tsconfig-paths": "^3.5.0"
   }
 }
