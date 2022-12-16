@@ -95,8 +95,7 @@ const AuthProvider: React.FC<IAuthProviderProps> = ({ children }) => {
         validateToken,
         userLogged,
         signOut
-      }}
-    >
+      }}>
       {children}
     </AuthContext.Provider>
   )

@@ -32,8 +32,7 @@ const ThemeProvider: React.FC<IThemeProvider> = ({ children }) => {
         toggleTheme,
         title: theme.title,
         theme
-      }}
-    >
+      }}>
       <DefaultTheme theme={theme}>{children}</DefaultTheme>
     </ThemeContext.Provider>
   )

@@ -11,8 +11,8 @@ const api = axios.create({
 })
 
 api.interceptors.response.use(
-  (response) => response,
-  (error) => {
+  response => response,
+  error => {
     if (error.response.status === 401) {
       localStorage.clear()
       window.location.reload()
@@ -21,8 +21,8 @@ api.interceptors.response.use(
   }
 )
 api.interceptors.response.use(
-  (response) => response,
-  (error) => {
+  response => response,
+  error => {
     const { t } = useTranslation()
     if (error.response.status === 500) {
       showToast('error', t('Ocorreu um erro ao processar sua solicitação'))

@@ -6,7 +6,7 @@ const convertExcelToJSON = async (file: File) => {
 
     fileReader.readAsArrayBuffer(file)
 
-    fileReader.onload = async (e) => {
+    fileReader.onload = async e => {
       const bufferArray = e?.target?.result
 
       const wb = XLSX.read(bufferArray, { type: 'buffer' })
@@ -20,7 +20,7 @@ const convertExcelToJSON = async (file: File) => {
       resolve(data)
     }
 
-    fileReader.onerror = (error) => {
+    fileReader.onerror = error => {
       reject(error)
     }
   })

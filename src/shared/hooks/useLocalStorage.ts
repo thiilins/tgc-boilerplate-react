@@ -25,7 +25,7 @@ const useLocalStorage = () => {
       }
     }
 
-    itemsInLS.forEach((itemInLS) => localStorage.removeItem(itemInLS))
+    itemsInLS.forEach(itemInLS => localStorage.removeItem(itemInLS))
   }
   const clearSelectedItems = (partOfKey: string) => {
     const itemsInLS: string[] = []
@@ -36,7 +36,7 @@ const useLocalStorage = () => {
       }
     }
 
-    itemsInLS.forEach((itemInLS) => localStorage.removeItem(itemInLS))
+    itemsInLS.forEach(itemInLS => localStorage.removeItem(itemInLS))
   }
 
   return {
