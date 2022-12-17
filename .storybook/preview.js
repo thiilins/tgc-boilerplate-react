@@ -1,6 +1,7 @@
+import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { dark } from '@/styles/themes/dark'
-import { light } from '@/styles/themes/light'
+import { dark } from '@app/styles/themes/dark'
+import { light } from '@app/styles/themes/light'
 import GlobalStyles from '@/styles/global'
 export const decorators = [
   Story => (
