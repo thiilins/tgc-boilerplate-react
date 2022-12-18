@@ -1,7 +1,8 @@
 <div align="center" id="top">
-  <img src="./.github/app.gif" alt="Boilerplate React Ts" />
+  <!-- <img src="./.github/app.gif" alt="Boilerplate React Ts" /> -->
 
 &#xa0;
+<img alt="CI" src="https://github.com/TG-Creative-Brasil/tgc-boilerplate-react/workflows/ci/badge.svg">
 
   <!-- <a href="https://boilerplatereactts.netlify.com">Demo</a> -->
 </div>
@@ -9,19 +10,18 @@
 <h1 align="center">Boilerplate ReactJS + TS + Storybook || VITEJS</h1>
 
 <p align="center">
-  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/thiilins/boilerplate-react-ts?color=56BEB8">
 
-  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/thiilins/boilerplate-react-ts?color=56BEB8">
+   <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/TG-Creative-Brasil/tgc-boilerplate-react?color=56BEB8&style=for-the-badge">
 
-  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/thiilins/boilerplate-react-ts?color=56BEB8">
+  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/TG-Creative-Brasil/tgc-boilerplate-react?color=56BEB8&style=for-the-badge">
 
-  <img alt="Licença" src="https://img.shields.io/github/license/thiilins/boilerplate-react-ts?color=56BEB8">
+  <img alt="Licença" src="https://img.shields.io/github/license/TG-Creative-Brasil/tgc-boilerplate-react?color=56BEB8&style=for-the-badge">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/thiilins/boilerplate-react-ts?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/TG-Creative-Brasil/tgc-boilerplate-react?color=56BEB8&style=for-the-badge" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/thiilins/boilerplate-react-ts?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/TG-Creative-Brasil/tgc-boilerplate-react?color=56BEB8&style=for-the-badge" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/thiilins/boilerplate-react-ts?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/TG-Creative-Brasil/tgc-boilerplate-react?color=56BEB8&style=for-the-badge" /> -->
 </p>
 
 <!-- Status -->
@@ -67,7 +67,7 @@ Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.co
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/thiilins/boilerplate-react-ts
+$ git clone https://github.com/TG-Creative-Brasil/tgc-boilerplate-react
 
 # Entre na pasta
 $ cd boilerplate-react-ts
