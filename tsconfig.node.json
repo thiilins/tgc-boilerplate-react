@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
-    "jsx": "react",
     "composite": true,
     "module": "ESNext",
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src", "vite.config.ts"],
-  "files": ["./src/app/styles/styled.d.ts"],
+  "include": ["vite.config.ts"],
+  "files": ["./src/styles/styled.d.ts"],
   "extends": "./tsconfig.paths.json"
 }

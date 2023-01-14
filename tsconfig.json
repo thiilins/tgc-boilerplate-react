@@ -15,14 +15,13 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vite/client"],
     "plugins": [
       {
         "name": "typescript-styled-plugin"
       }
     ]
   },
-  "include": ["src", "src/**/**/**/*"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "files": ["./src/app/styles/styled.d.ts"],
   "extends": "./tsconfig.paths.json"
