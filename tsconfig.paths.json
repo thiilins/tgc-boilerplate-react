@@ -14,7 +14,7 @@
       "@interfaces/*": ["./src/shared/types/*"],
       "@services/*": ["./src/services/*"],
       "@svg/*": ["./src/shared/svg/*"],
-      "@styles/*": ["./src/app/styles/*"],
+      "@styles/*": ["./src/styles/*"],
       "@GlobalTypes/*": ["./src/shared/types/*"],
       "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
     }

@@ -6,6 +6,6 @@
     "allowSyntheticDefaultImports": true
   },
   "include": ["vite.config.ts"],
-  "files": ["./src/styles/styled.d.ts"],
+  "files": ["./src/shared/types/styled.d.ts"],
   "extends": "./tsconfig.paths.json"
 }

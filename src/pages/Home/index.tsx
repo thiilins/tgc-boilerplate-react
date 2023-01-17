@@ -1,7 +1,7 @@
 import reactLogo from '@assets/react.svg'
 import React, { useState } from 'react'
 import useTranslation from '@hooks/useTranslation'
-import ToggleTheme from '@/app/components/Layouts/ToggleTheme'
+import ToggleTheme from '@/app/Layouts/ToggleTheme'
 import { Container } from './styles'
 const Home = () => {
   const { t } = useTranslation()

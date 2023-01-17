@@ -23,6 +23,6 @@
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "files": ["./src/app/styles/styled.d.ts"],
+  "files": ["src/shared/types/styled.d.ts"],
   "extends": "./tsconfig.paths.json"
 }
