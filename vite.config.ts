@@ -8,6 +8,6 @@ export default defineConfig({
       include: '**/*.tsx'
     }),
     tsconfigPaths(),
-    svgr()
+    svgr({ include: '**/*.svg', exportAsDefault: true })
   ]
 })

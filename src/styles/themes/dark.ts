@@ -1,7 +1,6 @@
 import { defaultTheme } from './defaults'
-import { DefaultTheme } from 'styled-components'
 
-export const dark: DefaultTheme = {
+export default {
   ...defaultTheme,
   title: 'dark',
   colors: {
@@ -9,10 +8,6 @@ export const dark: DefaultTheme = {
     primary: '#DCDCDC',
     secondary: '#FFFFFF',
     primaryText: '#000',
-    secondaryText: '#333333',
-    primaryNegative: '#00181d',
-    secondaryNegative: '#002a2e',
-    primaryTextNegative: '#fdfdfd',
-    secondaryTextNegative: '#aecfd2'
+    secondaryText: '#333333'
   }
 }
