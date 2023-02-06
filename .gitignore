@@ -112,3 +112,4 @@ public/workbox-*.js
 
 # storybook
 storybook-static
+pnpm-lock.yaml
