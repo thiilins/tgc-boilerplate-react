@@ -84,7 +84,7 @@
     "pinst": "^3.0.0",
     "plop": "^3.1.1",
     "prettier": "^2.8.1",
-    "storybook-dark-mode": "^2.0.5",
+    "storybook-dark-mode": "^3.0.0",
     "tsconfig-paths": "^4.1.0",
     "typescript": "^5.0.3",
     "typescript-styled-plugin": "^0.18.2",
