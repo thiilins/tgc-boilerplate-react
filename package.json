@@ -60,7 +60,6 @@
     "@storybook/builder-vite": "^7.0.8",
     "@storybook/react": "^7.0.6",
     "@storybook/testing-library": "^0.1.0",
-
     "@types/file-saver": "^2.0.5",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
