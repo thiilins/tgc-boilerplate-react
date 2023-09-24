@@ -7,7 +7,6 @@
     "javascript": "javascriptreact"
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "i18n-ally.localesPaths": [
-    "public/locales"
-  ]
+  "i18n-ally.localesPaths": ["public/locales"],
+  "cSpell.words": ["languagedetector", "pinst", "plopfile", "postpack"]
 }
