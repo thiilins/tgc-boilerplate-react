@@ -45,7 +45,7 @@
     "react-i18next": "^14.0.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.3.0",
-    "react-toastify": "^9.1.1",
+    "react-toastify": "^10.0.0",
     "styled-components": "^6.0.5",
     "uuid": "^9.0.0",
     "vanilla-masker": "^1.2.0",
