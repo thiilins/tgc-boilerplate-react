@@ -87,7 +87,7 @@
     "tsconfig-paths": "^4.1.0",
     "typescript": "^5.0.3",
     "typescript-styled-plugin": "^0.18.2",
-    "vite": "^5.0.11",
+    "vite": "^6.0.5",
     "vite-plugin-i18n-resources": "^1.0.3",
     "vite-plugin-svgr": "^4.0.0",
     "vite-tsconfig-paths": "^5.0.1"
