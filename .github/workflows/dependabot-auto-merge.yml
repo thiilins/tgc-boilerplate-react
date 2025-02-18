@@ -1,0 +1,42 @@
+name: Auto Merge Dependabot PRs
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR is from Dependabot
+        id: check_dependabot
+        run: |
+          PR_AUTHOR=$(jq -r ".pull_request.user.login" "$GITHUB_EVENT_PATH")
+          if [[ "$PR_AUTHOR" == "dependabot[bot]" ]]; then
+            echo "Dependabot PR detected."
+            echo "IS_DEPENDABOT=true" >> $GITHUB_ENV
+          else
+            echo "Not a Dependabot PR."
+            echo "IS_DEPENDABOT=false" >> $GITHUB_ENV
+          fi
+
+      - name: Approve PR
+        if: env.IS_DEPENDABOT == 'true'
+        run: |
+          gh pr review "$GITHUB_REF" --approve
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Enable Auto-Merge with Squash
+        if: env.IS_DEPENDABOT == 'true'
+        run: |
+          gh pr merge "$GITHUB_REF" --squash --auto
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

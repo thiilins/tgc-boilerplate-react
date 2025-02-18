@@ -5,16 +5,18 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "weekly"
-    # Specify labels for npm pull requests
+      interval: 'weekly'
     labels:
-      - "npm"
-      - "dependencies"
-
-    # Add reviewers
+      - 'npm'
+      - 'dependencies'
     reviewers:
-      - "thiilins"
-     
+      - 'thiilins'
+    commit-message:
+      prefix: 'chore(deps)'
+      include: 'scope'
+    # Habilita auto-merge para PRs aprovadas
+    allow:
+      - dependency-type: "all"
