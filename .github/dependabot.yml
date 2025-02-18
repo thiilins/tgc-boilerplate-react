@@ -1,22 +1,38 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
-
 version: 2
 updates:
-  - package-ecosystem: 'npm'
-    directory: '/'
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
-      interval: 'weekly'
+      interval: "weekly"
+      time: "06:00" # Executa sempre às 6h UTC para evitar horários de pico
+      timezone: "America/Sao_Paulo" # Ajuste para sua região
+    open-pull-requests-limit: 5 # Evita excesso de PRs abertas
     labels:
-      - 'npm'
-      - 'dependencies'
+      - "npm"
+      - "dependencies"
     reviewers:
-      - 'thiilins'
+      - "thiilins"
     commit-message:
-      prefix: 'chore(deps)'
-      include: 'scope'
-    # Habilita auto-merge para PRs aprovadas
+      prefix: "chore(deps)"
+      include: "scope"
+    
+    # Habilita auto-merge apenas para atualizações de segurança e patch/minor
     allow:
-      - dependency-type: "all"
+      - dependency-type: "production" # Apenas pacotes de produção
+      - dependency-type: "security" # Atualizações de segurança
+
+    # Ignora versões beta, alpha e RC para garantir estabilidade
+    ignore:
+      - dependency-name: "*" # Aplica a todas as dependências
+        versions: ["-alpha", "-beta", "-rc"]
+
+    # Prioriza atualizações de segurança
+    security-updates: true
+
+    # Agrupa PRs de dependências menores para evitar excesso de PRs
+    groups:
+      minor-updates:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
