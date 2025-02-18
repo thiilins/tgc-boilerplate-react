@@ -19,9 +19,12 @@ jobs:
         id: check_dependabot
         run: |
           PR_AUTHOR=$(jq -r ".pull_request.user.login" "$GITHUB_EVENT_PATH")
+          PR_NUMBER=$(jq -r ".pull_request.number" "$GITHUB_EVENT_PATH")
+          echo "PR Number: $PR_NUMBER"
           if [[ "$PR_AUTHOR" == "dependabot[bot]" ]]; then
             echo "Dependabot PR detected."
             echo "IS_DEPENDABOT=true" >> $GITHUB_ENV
+            echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_ENV
           else
             echo "Not a Dependabot PR."
             echo "IS_DEPENDABOT=false" >> $GITHUB_ENV
@@ -30,13 +33,13 @@ jobs:
       - name: Approve PR
         if: env.IS_DEPENDABOT == 'true'
         run: |
-          gh pr review "$GITHUB_REF" --approve
+          gh pr review $PR_NUMBER --approve
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Enable Auto-Merge with Squash
         if: env.IS_DEPENDABOT == 'true'
         run: |
-          gh pr merge "$GITHUB_REF" --squash --auto
+          gh pr merge $PR_NUMBER --squash --auto
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
